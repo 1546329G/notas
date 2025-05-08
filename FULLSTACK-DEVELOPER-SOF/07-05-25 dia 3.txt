@@ -1,0 +1,336 @@
+1: inicializamos git clasroom 
+2: Aplicar el flujo de trabajo Gitflow desde la clonación de un repositorio asignado
+mediante GitHub Classroom, hasta la gestión de nuevas funcionalidades, versiones y
+correcciones de errores usando Git y GitHub.
+3: comando "mkdir nombre de la carpeta" crea una carpeta nueva 
+4: el conado  " git checkout -b develop" sirve  para  crear y cambiar a una rama 
+5: bbranch es igual a rama
+6: rama develo junta todos los cambios de lo que aga 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Windows PowerShell
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Instale la versión más reciente de PowerShell para obtener nuevas características y mejoras. https://aka.ms/PSWindows
+
+PS C:\Users\Ciberseguridad> git
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]
+           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]
+           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   restore    Restore working tree files
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   diff       Show changes between commits, commit and working tree, etc
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   backfill   Download missing objects in a partial clone
+   branch     List, create, or delete branches
+   commit     Record changes to the repository
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   reset      Reset current HEAD to the specified state
+   switch     Switch branches
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+PS C:\Users\Ciberseguridad> dir
+
+
+    Directorio: C:\Users\Ciberseguridad
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         4/04/2025     18:38                .android
+d-----        20/11/2024     13:03                .dotnet
+d-----        13/03/2025     20:50                .gradle
+d-----        11/03/2025     20:30                .idlerc
+d-----        29/03/2025     17:22                .nbi
+d-----        29/11/2024     18:39                .nuget
+d-----        16/07/2024     15:04                .openjfx
+d-----        17/03/2025     19:29                .skiko
+d-----        27/04/2025     10:20                .ssh
+d-----        20/11/2024     13:06                .templateengine
+d-----         7/05/2025     15:46                .VirtualBox
+d-----         9/09/2024     15:08                .vscode
+d-----        25/10/2024     20:50                Alice3
+d-----         4/04/2025     20:06                AndroidStudioPr
+                                                  ojects
+d-----         9/09/2024     14:44                CIBER
+d-----         9/09/2024     14:56                Ciberseguridad
+                                                  - copia
+d-----        24/08/2024     10:25                Cisco Packet
+                                                  Tracer 5.3.3
+d-----        24/04/2025     14:08                Cisco Packet
+                                                  Tracer 8.2.2
+d-r---        12/02/2025     14:34                Contacts
+d-r---        16/04/2025     08:22                Desktop
+d-r---         7/05/2025     15:47                Documents
+d-r---         7/05/2025     20:53                Downloads
+d-r---        12/02/2025     14:34                Favorites
+d-----        24/08/2024     09:24                GNS3
+d-r---        12/02/2025     14:34                Links
+d-r---        12/02/2025     14:34                Music
+d-----         5/05/2025     20:02                notas
+d-----         9/09/2024     15:10                Nueva carpeta
+d-r---        31/07/2024     07:31                OneDrive
+d-r---        29/04/2025     12:47                Pictures
+d-----        28/03/2025     19:48                Postman
+d-----        19/11/2024     16:46                pseint
+d-r---        12/02/2025     14:34                Saved Games
+d-r---         9/04/2025     07:31                Searches
+d-----        12/08/2024     11:59                source
+d-----        17/09/2024     15:29                TALLER 1 WEB
+d-r---        12/02/2025     14:34                Videos
+d-----         7/05/2025     13:45                VirtualBox VMs
+-a----        17/03/2025     20:11             16 .emulator_conso
+                                                  le_auth_token
+-a----         5/05/2025     20:31             51 .gitconfig
+-a----        24/04/2025     13:19            356 .packettracer
+-a----        24/09/2024     18:07          72793 1.1.6 Lab -
+                                                  Cybersecurity
+                                                  Case
+                                                  Studies.docx
+-a----         2/09/2024     14:24         628909 13.5.1-packet-t
+                                                  racer---wlan-co
+                                                  nfiguration_es-
+                                                  XL.pka
+-a----         9/09/2024     14:31              0 Ciberseguridad
+-a----        21/10/2024     13:56        4252498 CLASE 01 -ALGOR
+                                                  ITMIA.pptx
+-a----         2/08/2024     13:30       10848722 CLASE 01
+                                                  -NETWORK
+                                                  SECURITY.pptx
+-a----        16/09/2024     14:22        4245645 CLASE 02 -
+                                                  DESARROLLO
+                                                  WEB.pptx
+-a----         9/08/2024     12:43        9843057 CLASE 02
+                                                  -NETWORK
+                                                  SECURITY.pptx
+-a----        17/09/2024     16:50        4215248 CLASE 03 -
+                                                  DESARROLLO
+                                                  WEB.pptx
+-a----         5/08/2024     13:24        3910026 CLASE 03-
+                                                  CONFIGURACION
+                                                  DE WINDOWS
+                                                  .pptx
+-a----        21/08/2024     14:00        5281713 CLASE 07
+                                                  CONFIGURACION
+                                                  DE WINDOWS
+                                                  .pptx
+-a----        17/09/2024     20:02            395 Copia de
+                                                  respaldo.txt
+-a----        13/09/2024     20:58         411842 EXAMEN FINAL
+                                                  CCNA7- TALLER
+                                                  - 13-09-24.docx
+-a----        17/09/2024     19:41            317 fibr optica.txt
+-a----        17/09/2024     18:16         157962 FORMATO
+                                                  ENTREGABLE 1 Y
+                                                  2.docx
+-a----        21/10/2024     13:54         806952 FreeDFD-1.1.zip
+-a----        11/03/2025     18:15          15362 Networking
+                                                  Security -
+                                                  Ejercicio2.docx
+-a----        10/09/2024     16:52        1190241 PRACTICA CCNA7
+                                                  - 10-09-24.docx
+-a----         1/10/2024     20:16        1667137 PRACTICA2.docx
+-a----         3/09/2024     19:42          29300 PRUEBA redhat
+                                                  - para alumnos
+                                                  v2.docx
+-a----        31/07/2024     13:16         608172 SEMINARIO
+                                                  TALLER
+                                                  PRACTICO 1.docx
+-a----        16/10/2024     10:54        1842778 SEMINARIO
+                                                  TALLER
+                                                  PRACTICO 11 -
+                                                  LENGUAJE DE
+                                                  PROGRAMACION
+                                                  v2.docx
+-a----        14/08/2024     10:27        1565305 SEMINARIO
+                                                  TALLER
+                                                  PRACTICO 3.docx
+-a----        21/08/2024     13:39        3582679 SEMINARIO
+                                                  TALLER
+                                                  PRACTICO 4.docx
+-a----         4/09/2024     14:03         710526 SEMINARIO
+                                                  TALLER
+                                                  PRACTICO 5 -
+                                                  REDHAT.docx
+-a----        18/09/2024     10:02        1280983 SEMINARIO
+                                                  TALLER
+                                                  PRACTICO 7 -
+                                                  REDHAT v2.docx
+-a----         7/08/2024     13:58        2769789 TALLER 2 -
+                                                  WINDOWS
+                                                  SERVER.docx
+-a----         2/10/2024     08:21        4188522 TALLER 9 -
+                                                  CYBEROPS.docx
+-a----         3/08/2024     11:37         287757 TALLER1 -
+                                                  NETWORK
+                                                  SECURITY -
+                                                  v2.docx
+-a----        16/09/2024     15:24         531892 TALLER2 -
+                                                  DESARROLLO
+                                                  WEB11.docx
+-a----        10/08/2024     10:31         151323 TALLER2 -
+                                                  NETWORK
+                                                  SECURITY
+                                                  v2.docx
+-a----        25/10/2024     20:50          78366 TALLER2-
+                                                  ALGORITMIA.docx
+-a----        23/09/2024     14:46        2438115 TALLER5- SUBIR
+                                                  SITIO WEB A LA
+                                                  NUBE.pptx
+-a----         1/10/2024     16:27         334228 TALLER8 -
+                                                  DESARROLLO
+                                                  WEB.docx
+-a----         1/10/2024     15:32        1959691 TAREA7 -
+                                                  DESARROLLO
+                                                  WEB.docx
+
+
+PS C:\Users\Ciberseguridad> git --v
+unknown option: --v
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]
+           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]
+           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+PS C:\Users\Ciberseguridad>  git --version
+git version 2.49.0.windows.1
+PS C:\Users\Ciberseguridad> mkdir github
+
+
+    Directorio: C:\Users\Ciberseguridad
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         7/05/2025     21:01                github
+
+
+PS C:\Users\Ciberseguridad> cd .\github\
+PS C:\Users\Ciberseguridad\github> git clone https://github.com/SENATITACNA/gihub-base-1546329G.git
+Cloning into 'gihub-base-1546329G'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+PS C:\Users\Ciberseguridad\github>
+
+
+
+
+
+PS C:\Users\Ciberseguridad\github> git checkout -b develop
+fatal: not a git repository (or any of the parent directories): .git
+PS C:\Users\Ciberseguridad\github> cd .\gihub-base-1546329G\
+PS C:\Users\Ciberseguridad\github\gihub-base-1546329G> cd..
+PS C:\Users\Ciberseguridad\github> dir
+
+
+    Directorio: C:\Users\Ciberseguridad\github
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         7/05/2025     21:03                gihub-base-1546329G
+
+
+PS C:\Users\Ciberseguridad\github> git .\gihub-base-1546329G\
+git: '.\gihub-base-1546329G\' is not a git command. See 'git --help'.
+PS C:\Users\Ciberseguridad\github>  cd .\gihub-base-1546329G\
+PS C:\Users\Ciberseguridad\github\gihub-base-1546329G> dir
+
+
+    Directorio: C:\Users\Ciberseguridad\github\gihub-base-1546329G
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7/05/2025     21:03            203 README.md
+
+
+PS C:\Users\Ciberseguridad\github\gihub-base-1546329G> git checkout -b develop
+Switched to a new branch 'develop'
+PS C:\Users\Ciberseguridad\github\gihub-base-1546329G> git push -u origin develop
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'develop' on GitHub by visiting:
+remote:      https://github.com/SENATITACNA/gihub-base-1546329G/pull/new/develop
+remote:
+To https://github.com/SENATITACNA/gihub-base-1546329G.git
+ * [new branch]      develop -> develop
+branch 'develop' set up to track 'origin/develop'. 
+
+
+
+PS C:\Users\Ciberseguridad\github\gihub-base-1546329G> echo  "Formulario  de contrasto HTML" > contacro.html
+PS C:\Users\Ciberseguridad\github\gihub-base-1546329G>  git add .\contacro.html
+PS C:\Users\Ciberseguridad\github\gihub-base-1546329G> git commit -m "agregar formulario de contacto"
+[develop 7cca7ef] agregar formulario de contacto
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 contacro.html
+PS C:\Users\Ciberseguridad\github\gihub-base-1546329G>  git checkout develop
+Already on 'develop'
+Your branch is ahead of 'origin/develop' by 1 commit.
+  (use "git push" to publish your local commits)
+PS C:\Users\Ciberseguridad\github\gihub-base-1546329G>  git merge feature/formulario-contacto
+merge: feature/formulario-contacto - not something we can merge
+PS C:\Users\Ciberseguridad\github\gihub-base-1546329G> git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 339 bytes | 339.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/SENATITACNA/gihub-base-1546329G.git
+   d7f43a3..7cca7ef  develop -> develop
+PS C:\Users\Ciberseguridad\github\gihub-base-1546329G> ^C
+PS C:\Users\Ciberseguridad\github\gihub-base-1546329G>
