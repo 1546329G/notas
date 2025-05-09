@@ -1,0 +1,3 @@
+1: git checkout -b es para crear un rama
+2: para saltar de rama es git checkout 
+3: git Branch para saber e que rama estoy 
