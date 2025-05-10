@@ -1,0 +1,118 @@
+1: continuamos lo del dia anterior 
+2: hice el ejrcio 3  y 4 
+	  Parte 3: Prepar ar una Nueva Versión (Release)
+    	  # Crear rama de release desde develop
+  	  git checkout -b release/v1.0 develop
+  	  # Simular preparación de versión
+  	  echo "Versión 1.0" > version.txt
+  	  git add version.txt
+  	  git commit -m "Preparar versión 1.0"
+  	  # Fusionar en main
+  	  git checkout main
+   	 git merge release/v1.0
+  	  # Etiquetar versión
+  	  git tag -a v1.0 -m "Versión 1.0"
+  	  # Subir a GitHub
+  	 git push && git push --tags
+ 	   # Fusionar en develop
+ 	   git checkout develop 
+ 	  git merge release/v1.0
+
+
+
+
+
+  	Arreglar un Error Crítico (Hotfix)
+ 	 # Crear rama hotfix desde main
+  	git checkout -b hotfix/arreglo-titulo main
+ 	 # Simular arreglo
+ 	 echo "Arreglo de título en página principal" > fix.txt
+ 	 git add fix.txt
+ 	 git commit -m "Corregir título principal"
+ 	 # Fusionar en main
+  	git checkout main
+ 	 git merge hotfix/arreglo-titulo
+  	git tag -a v1.0.1 -m "Hotfix 1.0.1"
+  	git push && git push --tags
+  	# Fusionar en develop
+  	git checkout develop
+ 	 git merge hotfix/arreglo-titulo
+
+
+3: pull recues solicita los cambios a la rama, solicitud de integración 
+
+4: avanzamos el pull recues, 
+
+	Pull Request es una solicitud para revisar y fusionar 	cambios de una rama a otra en un repositorio Git. Ayuda a:
+
+		Mejorar la colaboración.
+
+		Mantener la calidad del código.
+
+		Facilitar la revisión del código antes de integrarlo 		en la rama principal.
+
+
+5:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ PS C:\Users\Ciberseguridad\github\github-flow-1546329G> git checkout -b rama-php          
+Switched to a new branch 'rama-php'
+PS C:\Users\Ciberseguridad\github\github-flow-1546329G> git branch
+  agregar-archivo-xd
+  agregar-formulario
+  main
+* rama-php
+PS C:\Users\Ciberseguridad\github\github-flow-1546329G> echo "<?php echo 'Formulario PHP'; ? " > r1.php
+PS C:\Users\Ciberseguridad\github\github-flow-1546329G> git add .
+PS C:\Users\Ciberseguridad\github\github-flow-1546329G> git commit -m "nuevo archivo php"
+[rama-php 1229308] nuevo archivo php
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 r1.php
+PS C:\Users\Ciberseguridad\github\github-flow-1546329G> git push origin  rama-php
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 317 bytes | 317.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'rama-php' on GitHub by visiting:
+remote:      https://github.com/SENATITACNA/github-flow-1546329G/pull/new/rama-php
+remote: 
+To https://github.com/SENATITACNA/github-flow-1546329G.git
+ * [new branch]      rama-php -> rama-php
+PS C:\Users\Ciberseguridad\github\github-flow-1546329G> dir
+
+
+    Directorio: C:\Users\Ciberseguridad\github\github-flow-1546329G
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         9/05/2025     20:07                .github
+-a----         9/05/2025     21:10             58 app.py
+-a----         9/05/2025     21:10             68 contacto.php
+-a----         9/05/2025     20:59             50 contacto1.php
+-a----         9/05/2025     20:27             58 fritas.html
+-a----         9/05/2025     21:17             80 hola.java
+-a----         9/05/2025     21:25             68 r1.php
+-a----         9/05/2025     20:07            203 README.md
+-a----         9/05/2025     21:10             64 script.js
