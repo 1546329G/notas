@@ -1,0 +1,24 @@
+1: verficacion de instalcion de node,js
+2: creamos "Lista de Tareas Interactiva con Node.js, DOM y Eventos"
+3: mediante este código creamos un servidor en js
+
+ 	Abre el archivo server.js y escribe el siguiente 	código:
+
+	const express = require('express');
+	const app = express();
+	const path = require('path');
+	// Sirve archivos estáticos desde la carpeta 'public'
+	app.use(express.static('public'));
+	// Ruta principal que entrega el HTML
+	app.get('/', (req, res) => {
+ 	res.sendFile(path.join(__dirname, 	'/public/index.html'));
+	});
+	// Ejecuta el servidor en el puerto 3000
+	const PORT = 3000;
+	app.listen(PORT, () => {
+ 	console.log(`Servidor corriendo en http://localhost:	${PORT}`);
+	});
+
+
+4: Crear el archivo HTML (estructura base de la app)
+5: subimos losavances a git hub 
