@@ -1,0 +1,36 @@
+1: ramas en git sistemas de ventas
+2: contro de versiones
+3: ramas en git, sistema de ventas
+4: conseptos en git 
+5: definición de ramas 
+6: git Flow
+	master
+	hotlix
+	develop
+	feature
+	teature
+	reléase
+	
+	oto tipo: 
+	master  . . . . .
+	FEATURE      .
+	feature    .    . 
+
+7: ramas de coorecion de errores (bugflix)
+8: rramas de desarrollo (develop )
+9: pull request : solicitudes de incorporación de código al master y el 
+	MERGE: COMBINA 
+
+
+
+10. Tipos de Repositorios
+├── Local
+│   └── Copia completa en la computadora del usuario
+│
+├── Remoto
+│   └── Alojado en servidores (GitHub, GitLab, etc.)
+│
+└── Centralizado (opcional en Git)
+    └── Punto central de sincronización compartido
+
+

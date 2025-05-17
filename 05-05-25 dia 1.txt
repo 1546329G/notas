@@ -1,0 +1,4 @@
+1: define git y GitHub
+2: COMANDOS GIT
+3: variables de entorno
+4: GIT INIT, PARA INICIAR UN NUEVO REPOSITORIO

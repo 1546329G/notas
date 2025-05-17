@@ -1,0 +1,13 @@
+1: introducion a java Scrip 
+2: f12 es para entrar a modo desarrolador en google
+3: lo que govierna una pagina web es el donm 
+4: hiden es para ocultar el nodo "html" 
+5: el getElementById es para llamar a un nodo "js"
+6: para obtener un node se almaena en una variable (var)
+7: cualquier html que valla creando tiene que tener si o si su id  para poder manipularlo 
+8: 
+
+
+
+
+

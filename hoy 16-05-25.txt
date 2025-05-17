@@ -1,0 +1,4 @@
+1: aprender patron MVC mode de vista de controlador
+2: en la capeta modelos siempre tiene que ver con base de datos
+3:get para obter y el post para crear datos
+4: 
