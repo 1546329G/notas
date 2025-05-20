@@ -3,3 +3,11 @@
 3: dom es la estructura de HTML
 4: todas las paginas HTML web tienen DOM
 5: Scaffolfin
+6: prettier
+permite a los desarroladore, darl formato, es  para que es mas ordenado, mas colores
+7: proyecto VIte 
+	cuando ejevutas:
+		npx create-viteQlatest my-app--templatereact
+	
+	obtinrres un proyecto Vite para REact
+8: 
