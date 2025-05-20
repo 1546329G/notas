@@ -1,0 +1,5 @@
+1:  intruccion a read
+2: spa usan todas las empresas
+3: dom es la estructura de HTML
+4: todas las paginas HTML web tienen DOM
+5: Scaffolfin
